@@ -1,0 +1,54 @@
+header {
+	padding: 0 24px;
+	/* Header background is pale green-blue, with a gold line at the top and a light line at the bottom. */
+	background-color: #EAF0EE;
+	border-top: 2px solid #B79A5B;
+	border-bottom: 1px solid #D9E2DE;
+}
+
+header > nav {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+header > nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 32px;
+	margin: 0;
+	padding: 18px 0;
+	list-style: none;
+}
+
+header > nav a {
+	/* Menu buttons are muted blue normally. */
+	color: #456B79;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 160ms ease;
+}
+
+header > nav a:hover {
+	/* A menu button turns sage green when the mouse is over it. */
+	color: #58715D;
+}
+
+header > nav a:focus-visible {
+	/* A menu button gets dark text and a gold outline when selected with the keyboard. */
+	color: #263238;
+	outline: 2px solid #B79A5B;
+	outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+	header {
+		padding: 0 16px;
+	}
+
+	header > nav > ul {
+		justify-content: center;
+		gap: 20px;
+	}
+}
