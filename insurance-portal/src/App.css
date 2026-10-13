@@ -1,4 +1,32 @@
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-button.active {
+  font-weight: 700;
+}
+
+.page-message {
+  margin: 20px 0;
+  text-align: center;
+}
+
 .app-container {
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +40,52 @@
   flex: 1 1 280px;
   max-width: 340px;
 }
+
+.insurance-detail-page {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 32px;
+  border: 1px solid #d9e2de;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgb(38 50 56 / 8%);
+}
+
+.insurance-detail-page h2 {
+  margin: 0 0 14px;
+  color: #263238;
+  font-size: 28px;
+}
+
+.insurance-detail-page p {
+  max-width: 65ch;
+  margin: 0 0 20px;
+  color: #59666a;
+  line-height: 1.65;
+}
+
+.insurance-detail-page > button {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 4px;
+  background: #456b79;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.insurance-detail-page > button:hover {
+  background: #58715d;
+}
+
+@media (max-width: 600px) {
+  .insurance-detail-page {
+    margin: 24px 16px;
+    padding: 22px;
+  }
+}
+
 .hero {
   position: relative;
 
