@@ -35,10 +35,10 @@ export default function InsuranceCard({
         <button
           type="button"
           className="insurance-card__button"
-          onClick={onViewMore}
-        >
+          onClick={onViewMore}>
           View more info
         </button>
+
       </div>
     </article>
   );
